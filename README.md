@@ -71,6 +71,39 @@
 <br>
 <br>
 
+## 🏷️ Data
+
+### ✔️ id
+
+- The current time converted into milliseconds.
+
+![image](https://github.com/user-attachments/assets/02b06fc1-e7ea-4908-a66c-3999ec8d9eb0)
+
+  
+### ✔️ text
+
+- The task.
+
+![image](https://github.com/user-attachments/assets/ca216986-c3a1-4b47-b79d-6cdad6034da6)
+
+
+### ✔️ date
+
+- The date when the task was created or last modified.
+
+![image](https://github.com/user-attachments/assets/9bed8015-0a37-437a-aee4-6cd53329d18f)
+
+
+### ✔️ complete
+
+- A boolean indicating whether the task is completed (true or false).
+
+![image](https://github.com/user-attachments/assets/f88c1556-93c2-4cc8-8881-d1f78df21b2e)
+
+
+<br>
+<br>
+
 ## 📚 Stacks
 
 ### ✔️ Environment 
