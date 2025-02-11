@@ -49,24 +49,16 @@
 <br>
 <br>
 
-## 💻 Screen Layout
-| Main Page - (To Do Page) |
-|:-------------:|
-| ![image](https://github.com/user-attachments/assets/1be070d8-f896-471c-a1db-79e6c373a726) |
+## 📚 Stacks
 
-| Done Page |
-|:-------------:|
-| ![image](https://github.com/user-attachments/assets/1e853d8d-da6b-4c9d-b997-b8387b36cb3c) |
+### ✔️ Environment 
+<img src="https://img.shields.io/badge/visual Studio Code-3776AB?style=for-the-badge&logo=racket&logoColor=white"/> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 
-| Create Action | Edit Action |
-|:-------------:|:-------------:|
-|![image](https://github.com/user-attachments/assets/7a6ef2c0-c649-44fd-b507-2164fd511128)|![image](https://github.com/user-attachments/assets/6dc4fcf7-43ec-4a8e-981d-caba47599735)|
+### ✔️ Front-End
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"> 
 
-| Delete Action | Check Action |
-|:-------------:|:-------------:|
-|![image](https://github.com/user-attachments/assets/3cf1dec1-449f-4c68-a625-ea88ced064e9)|![image](https://github.com/user-attachments/assets/ecb76f89-7292-4dbb-ab8f-265e31d282e8)|
-
-
+### ✔️ Back-End 
+<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
 
 <br>
 <br>
@@ -104,13 +96,24 @@
 <br>
 <br>
 
-## 📚 Stacks
+## 💻 Screen Layout
+| Main Page - (To Do Page) |
+|:-------------:|
+| ![image](https://github.com/user-attachments/assets/1be070d8-f896-471c-a1db-79e6c373a726) |
 
-### ✔️ Environment 
-<img src="https://img.shields.io/badge/visual Studio Code-3776AB?style=for-the-badge&logo=racket&logoColor=white"/> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+| Done Page |
+|:-------------:|
+| ![image](https://github.com/user-attachments/assets/1e853d8d-da6b-4c9d-b997-b8387b36cb3c) |
 
-### ✔️ Front-End
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"> 
+| Create Action | Edit Action |
+|:-------------:|:-------------:|
+|![image](https://github.com/user-attachments/assets/7a6ef2c0-c649-44fd-b507-2164fd511128)|![image](https://github.com/user-attachments/assets/6dc4fcf7-43ec-4a8e-981d-caba47599735)|
 
-### ✔️ Back-End 
-<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
+| Delete Action | Check Action |
+|:-------------:|:-------------:|
+|![image](https://github.com/user-attachments/assets/3cf1dec1-449f-4c68-a625-ea88ced064e9)|![image](https://github.com/user-attachments/assets/ecb76f89-7292-4dbb-ab8f-265e31d282e8)|
+
+
+
+<br>
+<br>
