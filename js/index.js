@@ -182,7 +182,7 @@ fetch(apiUrl)
 // Toast 만들기
 function showToast(title, message) {
     var htmlToast = `
-        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div id="toast"class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="toast-header">
                 <strong class="me-auto">${title}</strong>
                 <small class="text-body-secondary">ToDoApp</small>
@@ -202,7 +202,6 @@ function showToast(title, message) {
     let toastElement = new bootstrap.Toast($('#toast-container .toast')[0]);
     toastElement.show();
 }
-
 
 
 // Modal을 전달.
