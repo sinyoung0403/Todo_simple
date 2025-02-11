@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    font-family: 'Ownglyph_ParkDaHyun';
+    font-weight: normal;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto; 
+}
+
+/* 전체 부분 */
+.container-full{
+    min-height:100vh ;
+
+    margin:auto;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+/* container */
+.container-head{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 제목 #title*/
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+#title > h1{
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+/*입력창 수정*/
+.todo_Input{
+    width:60vh;
+}
+#todoText{
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#todoBtn{
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+}
+#todoBtn:hover{
+    color:black;
+    background-color: rgba(71, 56, 56, 0.616);
+}
+
+/* 일정 input li 꾸미기*/
+.container-stack{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list-group-item{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+#eidt_text {
+    width:  80%;
+    border-color: rgba(226, 181, 255, 0.247);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 50px;
+}
+.list-group-item{
+    height: 150px;
+    width: 800px;
+}
+.list-group-item > div {
+    height:80px;
+    width: 100%;
+    padding-top:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.date-p{
+    font-size: 20px;
+    height:80px;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center;     /* 수직 중앙 정렬 */
+    text-align: center; 
+}
+
+.list-group-item > button {
+    margin: 5px;
+    height: 37px;
+    line-height: 37px; 
+    font-size:20px;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center;     /* 수직 중앙 정렬 */
+    text-align: center; 
+    border: none;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+#deleteBtn{
+    background-color: #b87179e0;
+}
+
+#editBtn{
+    background-color:  rgba(231, 186, 90, 0.822); 
+}
+
+/*todo 버튼과 Done 버튼 수정*/
+#todoDonerow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: auto;
+    width: 800px;
+    height: 80px;
+}
+#todohref {
+    background-color: rgba(231, 187, 90, 0.644);
+    align-items:center;
+    width: 350px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:larger;
+}
+
+#donehref {
+    background-color: #b8717985;
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:larger;
+}
+
+#todohref:hover {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.342);
+}
+
+#donehref:hover {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 5px 5px 6px rgba(5, 1, 1, 0.342);
+}
+
+.hrefthis{
+    color:rgb(255, 255, 255)  !important;
+    font-size:25px !important;
+    font-weight: bolder !important;
+    text-shadow: 2px 2px 4px rgb(7, 3, 3);
+}
+
+/* 라인 만들어 줌 */
+#line{
+    width: 100%;
+    height: 8px;
+    background-color: rgba(202, 163, 111, 0.342);
+}
+#line2{
+    width: 100%;
+    margin-top: 4px;
+    height: 5px;
+    background-color: rgba(202, 163, 111, 0.22);
+}
+
+/*토스트*/
+/* 토스트 메시지 컨테이너 스타일링 */
+
+
+#toast-container {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999;
+  }
+
+.toast {
+    margin: 10px;
+}
+.me-auto{
+    font-size: 15px;
+}
+.toast-sm {
+    color: #b8717985;
+    font-size: 15px;
+}
+
+#toast-message {
+    font-size: 20px;
+}
+
+hr {
+	display: block;
+	position: relative;
+    height: 5px;
+	width: 300px;
+    position: fixed;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1050; 
+	border: none;
+	border-bottom: 2px dashed #b8717985;;
+	float: left;
+}
