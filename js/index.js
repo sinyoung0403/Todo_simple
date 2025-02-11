@@ -99,19 +99,16 @@ $('.form-check-input').change(async function () {
     let check_id = $(this).closest('li').attr('id');
     let check_text = $(this).closest('li').find('input[type="text"]').val().trim();
     const docRef = doc(db, "todos", check_id);
-    console.error("에러가 발생했습니다. ", '1');
     if ($(this).is(':checked')) {
-        console.error("에러가 발생했습니다. ", '2');
-        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 완료 하였습니다.");
         await updateDoc(docRef, {
             complete: true,
         });
-        console.error("에러가 발생했습니다. ", '3')
+        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 완료 하였습니다.");        
     } else {
-        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 미완료 하였습니다.");
         await updateDoc(docRef, {
             complete: false,
         });
+        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 미완료 하였습니다.");
     }
 });
 
@@ -124,9 +121,9 @@ $(document).on('click', '.deleteBtn', async function () {
     actionModal("이 일정을 삭제하시겠습니까?", "[ " + task_text + " ]", "삭제하기");
     $(document).one('click', '#modal-actionBtn', async function () {
         const docRef = doc(db, 'todos', check_id);
+        myModal.remove()
         try {
             await deleteDoc(docRef); 
-            $("#dynamicModal").remove()
             showToast("[ " + task_text.slice(0, 20) + "... ]  삭제여부", "삭제되었습니다.");
         } catch (error) {
             console.error("삭제 실패: ", error);
@@ -147,6 +144,7 @@ $(document).on('click', '.editBtn', async function () {
 
     // 실제로 변경할건지 아닌지 물어보기.
     $(document).on('click', '#modal-actionBtn', async function () { 
+        myModal.remove()
         const docRef = doc(db, "todos", check_id);
         updateDoc(docRef, {
             text: task_text,
@@ -169,9 +167,6 @@ $(document).on("click","#toast-closeBtn", async function (){
 })
 
 
-
-
-
 // 날씨와 온도 가져오기.
 var apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=1835848&APPID=2b26f0cb27375511054fc26654fb56b6&lang=kr&units=metric";
 fetch(apiUrl)
@@ -187,7 +182,7 @@ fetch(apiUrl)
 // Toast 만들기
 function showToast(title, message) {
     var htmlToast = `
-        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="toast-header">
                 <strong class="me-auto">${title}</strong>
                 <small class="text-body-secondary">ToDoApp</small>
@@ -214,7 +209,7 @@ function showToast(title, message) {
 function actionModal(title, message, action) {
     // 모달의 HTML 구조를 동적으로 생성
     const modalHTML = `
-        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
