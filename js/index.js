@@ -103,12 +103,18 @@ $('.form-check-input').change(async function () {
         await updateDoc(docRef, {
             complete: true,
         });
-        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 완료 하였습니다.");        
+        showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 완료 하였습니다.");
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000); // 3초 후 새로고침        
     } else {
         await updateDoc(docRef, {
             complete: false,
         });
         showToast("[ " + check_text.slice(0, 20) + "... ] ", "일정을 미완료 하였습니다.");
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000); // 3초 후 새로고침
     }
 });
 
@@ -125,12 +131,16 @@ $(document).on('click', '.deleteBtn', async function () {
         try {
             await deleteDoc(docRef); 
             showToast("[ " + task_text.slice(0, 20) + "... ]  삭제여부", "삭제되었습니다.");
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000); // 3초 후 새로고침
         } catch (error) {
             console.error("삭제 실패: ", error);
         }
     })
     $(document).on('click','#modal-closeBtn', async function (){
         showToast("[ " + task_text.slice(0, 20) + "... ]  삭제여부", "수정 취소 하였습니다.");
+        
     })
 });
 
