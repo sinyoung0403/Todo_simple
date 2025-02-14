@@ -52,6 +52,9 @@ $('#todoBtn').click(async function () {
             date: date
         });
         showToast("[ " + taskText.slice(0, 15) + "... ] ", "일정을 추가 하였습니다.");
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000); // 3초 후 새로고침   
     } catch (error) {
         console.error("에러가 발생했습니다. ", error);
     }
