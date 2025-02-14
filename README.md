@@ -1,4 +1,4 @@
-| To Do App - Simple |
+| To Do App - Simple |  
 |:-------------:|
 |  ![image](https://github.com/user-attachments/assets/8b6e8f01-5514-4c61-b53b-97932a207c04)  |
 
